@@ -1,10 +1,10 @@
-#! /bin/bash
+#! /bin/bash -x
 head=0
 tail=0
 
 while [ "$head" -lt 21 ] && [ "$tail" -lt 21 ]
 do
-x=$((RANDOM%2))
+x=$(( RANDOM%2 ))
 if [ $x -eq 1 ];
 then
 tail=$(( $tail + 1 ))
